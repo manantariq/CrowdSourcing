@@ -1,0 +1,17 @@
+<h3>Login</h3>
+<form>
+    <div class="form-group" data-bind="css: {'has-error': errors()['password']}">
+        <label for="loginformid_field_0" data-bind="css: {active: fields()['password']}, attr: {'data-error': errors()['password']}" class="control-label">password</label>
+        <input id="loginformid_field_0" data-bind="value: fields()['password']" type="text" class="form-control validate" aria-describedby="loginformid_field_0_error">
+        <span id="loginformid_field_0_error" class="help-block" data-bind="text: errors()['password']"></span>
+    </div>
+    <div class="form-group" data-bind="css: {'has-error': errors()['username']}">
+        <label for="loginformid_field_1" data-bind="css: {active: fields()['username']}, attr: {'data-error': errors()['username']}" class="control-label">username</label>
+        <input id="loginformid_field_1" data-bind="value: fields()['username']" type="text" class="form-control validate" aria-describedby="loginformid_field_1_error">
+        <span id="loginformid_field_1_error" class="help-block" data-bind="text: errors()['username']"></span>
+    </div>
+</form>
+<div class="row">
+    <a class="btn btn-primary" data-bind="click: trigger.bind($data, 'registereventid')">Register</a>
+    <a class="btn btn-primary" data-bind="click: trigger.bind($data, 'loginid')">Login</a>
+</div>
