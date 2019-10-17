@@ -3,7 +3,7 @@
 
 exports.createActions = function (options) {
     return {
-        'registeractionid': require('./registeractionid').createAction(options)
-        ,'loginactionid': require('./loginactionid').createAction(options)
+        'loginactionid': require('./loginactionid').createAction(options)
+        ,'registeractionid': require('./registeractionid').createAction(options)
     };
 };
