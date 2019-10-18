@@ -1,0 +1,17 @@
+.red{
+    background-color: skyblue;
+    border: solid;
+    width: 50%;
+}
+
+.big{
+  font-weight: bold;
+}
+
+.evenRow{
+    background-color: #e4f5f9;
+}
+
+.oddRow{
+    background-color: #f6f6f7;
+}

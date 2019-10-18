@@ -62,7 +62,10 @@ gulp.task('js', function () {
 });
 
 gulp.task('css', function () {
-    return gulp.src('./node_modules/bootstrap/dist/css/bootstrap.min.css').pipe(gulp.dest('./www/css'));
+    return merge(
+        gulp.src('./node_modules/bootstrap/dist/css/bootstrap.min.css').pipe(gulp.dest('./www/css')),
+        gulp.src('./src/css/style.css').pipe(gulp.dest('./www/css'))
+    );
 });
 
 gulp.task('build', ['html', 'css', 'js', 'vendor']);
