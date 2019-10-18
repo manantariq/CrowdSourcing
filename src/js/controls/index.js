@@ -13,6 +13,11 @@ exports.register = function () {
     require('./c-registerformid').register();
     require('./c-masterprofileid').register();
     require('./c-mastereditprofileid').register();
+    require('./c-campaignlistpageid').register();
+    require('./c-newcampaignid').register();
     require('./c-masterprofileformid').register();
     require('./c-mastereditprofileformid').register();
-                    };
+    require('./c-runningcampaignslistid').register();
+    require('./c-readycampaignslistid').register();
+    require('./c-newcampaignformid').register();
+                          };

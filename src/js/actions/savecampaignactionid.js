@@ -12,10 +12,11 @@ function Action( options ) { // add "options" parameters if needed
 }
 Action.prototype.run = function (parameters, solve) { // add "onCancel" parameters if needed
     // Parameters:
-    // parameters['fullname']
-    // parameters['password']
-    // parameters['type']
-    // parameters['username']
+    // parameters['annotation_replica']
+    // parameters['annotation_size']
+    // parameters['name']
+    // parameters['selection_replica']
+    // parameters['threshold']
 
     // TODO: Execution
     /*
@@ -24,9 +25,9 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
         .then(solve);
     */
     // THIS CAN BE REMOVED (BEGIN)
-    $.notify({message: 'RegisterAction'}, {allow_dismiss: true, type: 'success'});
+    $.notify({message: 'SaveAction'}, {allow_dismiss: true, type: 'success'});
     solve({
-        event: 'registersuccessid', // registersuccess
+        event: 'savecampaignsuccessid', // success
         data: {
         }
     });

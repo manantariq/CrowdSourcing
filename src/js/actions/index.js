@@ -6,5 +6,6 @@ exports.createActions = function (options) {
         'loginactionid': require('./loginactionid').createAction(options)
         ,'registeractionid': require('./registeractionid').createAction(options)
         ,'savemasterprofileactionid': require('./savemasterprofileactionid').createAction(options)
+        ,'savecampaignactionid': require('./savecampaignactionid').createAction(options)
     };
 };
