@@ -5,5 +5,6 @@ exports.createActions = function (options) {
     return {
         'loginactionid': require('./loginactionid').createAction(options)
         ,'registeractionid': require('./registeractionid').createAction(options)
+        ,'savemasterprofileactionid': require('./savemasterprofileactionid').createAction(options)
     };
 };

@@ -1,0 +1,27 @@
+<h3>Edit Profile</h3>
+<form class = "blue">
+    <div class="form-group" data-bind="css: {'has-error': errors()['Full Name']}">
+        <label for="mastereditprofileformid_field_0" data-bind="css: {active: fields()['Full Name']}, attr: {'data-error': errors()['Full Name']}" class="control-label">Full Name</label>
+        <input id="mastereditprofileformid_field_0" data-bind="value: fields()['Full Name']" type="text" class="form-control validate" aria-describedby="mastereditprofileformid_field_0_error">
+        <span id="mastereditprofileformid_field_0_error" class="help-block" data-bind="text: errors()['Full Name']"></span>
+    </div>
+    <div class="form-group" data-bind="css: {'has-error': errors()['Password']}">
+        <label for="mastereditprofileformid_field_1" data-bind="css: {active: fields()['Password']}, attr: {'data-error': errors()['Password']}" class="control-label">Password</label>
+        <input id="mastereditprofileformid_field_1" data-bind="value: fields()['Password']" type="text" class="form-control validate" aria-describedby="mastereditprofileformid_field_1_error">
+        <span id="mastereditprofileformid_field_1_error" class="help-block" data-bind="text: errors()['Password']"></span>
+    </div>
+    <div class="form-group" data-bind="css: {'has-error': errors()['Type']}">
+        <label for="mastereditprofileformid_field_2" data-bind="css: {active: fields()['Type']}, attr: {'data-error': errors()['Type']}" class="control-label">Type</label>
+        <input id="mastereditprofileformid_field_2" data-bind="value: fields()['Type']" type="text" class="form-control validate" aria-describedby="mastereditprofileformid_field_2_error">
+        <span id="mastereditprofileformid_field_2_error" class="help-block" data-bind="text: errors()['Type']"></span>
+    </div>
+    <div class="form-group" data-bind="css: {'has-error': errors()['Username']}">
+        <label for="mastereditprofileformid_field_3" data-bind="css: {active: fields()['Username']}, attr: {'data-error': errors()['Username']}" class="control-label">Username</label>
+        <input id="mastereditprofileformid_field_3" data-bind="value: fields()['Username']" type="text" class="form-control validate" aria-describedby="mastereditprofileformid_field_3_error">
+        <span id="mastereditprofileformid_field_3_error" class="help-block" data-bind="text: errors()['Username']"></span>
+    </div>
+</form>
+<div class = "row">
+    <a class="btn btn-primary big" data-bind="click: trigger.bind($data, 'cancelmastereditprofileid')">Cancel</a>
+    <a class="btn btn-primary big" data-bind="click: trigger.bind($data, 'savemastereditprofileid')">Save Profile</a>
+</div>
