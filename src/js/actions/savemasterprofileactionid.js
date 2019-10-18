@@ -3,7 +3,7 @@
 
 var Promise = require('bluebird');
 
-function Action(option) { // add "options" parameters if needed
+function Action(options) { // add "options" parameters if needed
     // TODO: Global Initialization
     /*
     example:
