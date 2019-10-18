@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+            <a class="col-xs-2 btn btn-default" data-bind="click: landmark.bind($data, 'masterprofileid'), css: {active: active() === 'masterprofileid'}">Master Profile</a>
+        </div>
+</div>
+<!-- ko if: active() === 'masterprofileid' -->
+    <!-- Master Profile -->
+    <c-masterprofileid params="context: context"></c-masterprofileid>
+<!-- /ko -->
+<!-- ko if: active() === 'mastereditprofileid' -->
+    <!-- Edit Profile -->
+    <c-mastereditprofileid params="context: context"></c-mastereditprofileid>
+<!-- /ko -->

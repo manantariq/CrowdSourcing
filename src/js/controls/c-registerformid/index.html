@@ -1,5 +1,5 @@
 <h3>Register</h3>
-<form class="red">
+<form class ="red">
     <div class="form-group" data-bind="css: {'has-error': errors()['Full Name']}">
         <label for="registerformid_field_0" data-bind="css: {active: fields()['Full Name']}, attr: {'data-error': errors()['Full Name']}" class="control-label">Full Name</label>
         <input id="registerformid_field_0" data-bind="value: fields()['Full Name']" type="text" class="form-control validate" aria-describedby="registerformid_field_0_error">
@@ -21,6 +21,6 @@
         <span id="registerformid_field_3_error" class="help-block" data-bind="text: errors()['Username']"></span>
     </div>
 </form>
-<div class="row">
+<div class ="row">
     <a class="btn btn-primary" data-bind="click: trigger.bind($data, 'registersubmitid')">Done</a>
 </div>

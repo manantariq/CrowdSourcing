@@ -3,7 +3,7 @@
 
 var Promise = require('bluebird');
 
-function Action() { // add "options" parameters if needed
+function Action(option) { // add "options" parameters if needed
     // TODO: Global Initialization
     /*
     example:
@@ -24,7 +24,8 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
     // THIS CAN BE REMOVED (BEGIN)
     $.notify({message: 'LoginAction'}, {allow_dismiss: true, type: 'success'});
     solve({
-        event: 'loginfailid', // Fail
+        event: 'mastersuccessid', // mastersuccess
+        // event: 'loginfailid', // Fail
         data: {
         }
     });
