@@ -22,7 +22,7 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
         .then(solve);
     */
     // THIS CAN BE REMOVED (BEGIN)
-    $.notify({message: 'DisableAnnotatorAction'}, {allow_dismiss: true, type: 'success'});
+    $.notify({message: 'DisableAnnotator'}, {allow_dismiss: true, type: 'success'});
     solve({
         event: 'f577d810-1532-4a0f-8e2e-8217d09383fd', // event
         data: {

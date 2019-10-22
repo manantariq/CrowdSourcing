@@ -1,12 +1,10 @@
-<h3>Images List</h3>
+<h3>Annotated Images</h3>
 <table class="table table-hover table-condensed">
     <thead>
         <tr>
             <th>#</th>
             <th>canonical</th>
             <th>id</th>
-            <th>path</th>
-            <th>actions</th>
         </tr>
     </thead>
     <tbody data-bind="foreach: items">
@@ -14,10 +12,6 @@
             <td data-bind="text: id"></td>
             <td data-bind="text: $data['canonical']" style="white-space: pre-wrap;"></td>
             <td data-bind="text: $data['id']" style="white-space: pre-wrap;"></td>
-            <td data-bind="text: $data['path']" style="white-space: pre-wrap;"></td>
-            <td>
-                <a class="btn btn-primary big" data-bind="click: $parent.trigger.bind($data, 'deleteimageid'), clickBubble: false">Delete</a>
-            </td>
         </tr>
     </tbody>
 </table>

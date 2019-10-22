@@ -3,7 +3,7 @@
 
 var Promise = require('bluebird');
 
-function Action( options) { // add "options" parameters if needed
+function Action( options ) { // add "options" parameters if needed
     // TODO: Global Initialization
     /*
     example:
@@ -24,7 +24,7 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
         .then(solve);
     */
     // THIS CAN BE REMOVED (BEGIN)
-    $.notify({message: 'SaveAction'}, {allow_dismiss: true, type: 'success'});
+    $.notify({message: 'Save'}, {allow_dismiss: true, type: 'success'});
     solve({
         event: 'savemasterprofilesuccessid', // Success
         data: {

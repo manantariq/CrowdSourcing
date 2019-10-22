@@ -6,7 +6,7 @@ var ko = require('knockout'),
 
 function ViewModel(params) {
     var self = this;
-    self._repository = params.context.repositories['imagecollection'];
+    self._repository = params.context.repositories['workerscollection'];
     self.context = params.context;
     self.status = ko.observable('');
     self.selected = ko.observable(undefined);
@@ -15,6 +15,7 @@ function ViewModel(params) {
     self.select = function() {
         self.selected(this.id);
         self.output = this;
+        self.trigger.call(this, 'workerselectedid');
     };
 
     self.trigger = function (id) {
@@ -22,13 +23,14 @@ function ViewModel(params) {
     };
 }
 
-ViewModel.prototype.id = 'imagelistid';
+ViewModel.prototype.id = 'workerlistid';
 
 ViewModel.prototype.fields = {
     id: 1
-    ,'canonical': 1
+    ,'annotator': 1
+    ,'fullname': 1
     ,'id': 1
-    ,'path': 1
+    ,'selector': 1
 };
 
 ViewModel.prototype.waitForStatusChange = function () {
@@ -71,7 +73,7 @@ ViewModel.prototype.init = function (options) {
 };
 
 exports.register = function () {
-    ko.components.register('c-imagelistid', {
+    ko.components.register('c-workerlistid', {
         viewModel: {
             createViewModel: function (params, componentInfo) {
                 var vm = new ViewModel(params);

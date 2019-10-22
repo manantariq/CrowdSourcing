@@ -22,14 +22,14 @@ function ViewModel(params) {
     };
 }
 
-ViewModel.prototype.id = 'workercontainerid';
+ViewModel.prototype.id = 'approvedimagestabid';
 ViewModel.prototype.children = [
-    'workerlistid' // Workers List
-    ,'campaignworkersdetailsid' // worker details
+    'approvedimageslistid' // Images
+    ,'approvedimagestatisticsid' // Image Statistics
 ];
 
 exports.register = function () {
-    ko.components.register('c-workercontainerid', {
+    ko.components.register('c-approvedimagestabid', {
         viewModel: {
             createViewModel: function (params, componentInfo) {
                 var vm = new ViewModel(params);

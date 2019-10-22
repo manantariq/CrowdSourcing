@@ -12,8 +12,7 @@ function Action( options ) { // add "options" parameters if needed
 }
 Action.prototype.run = function (parameters, solve) { // add "onCancel" parameters if needed
     // Parameters:
-    // parameters['annotationURL']
-    // parameters['id']
+    // parameters['executionURL']
 
     // TODO: Execution
     /*
@@ -22,11 +21,10 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
         .then(solve);
     */
     // THIS CAN BE REMOVED (BEGIN)
-    $.notify({message: 'EnableAnnotator'}, {allow_dismiss: true, type: 'success'});
+    $.notify({message: 'TerminateCampaign'}, {allow_dismiss: true, type: 'success'});
     solve({
-        event: 'd906a46a-51f7-4dfd-9306-dd1db66c85f8', // event
+        event: 'terminatecampaignsuccessid', // success
         data: {
-            'id': parameters['id'],
         }
     });
     // THIS CAN BE REMOVED (END)

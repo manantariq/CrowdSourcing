@@ -22,14 +22,14 @@ function ViewModel(params) {
     };
 }
 
-ViewModel.prototype.id = 'workercontainerid';
+ViewModel.prototype.id = 'runningcampaigndetailspageid';
 ViewModel.prototype.children = [
-    'workerlistid' // Workers List
-    ,'campaignworkersdetailsid' // worker details
+    'runningcampaignsdetailsid' // Campaign Details
+    ,'runningcampaigntabcontainerid' // Tab Container
 ];
 
 exports.register = function () {
-    ko.components.register('c-workercontainerid', {
+    ko.components.register('c-runningcampaigndetailspageid', {
         viewModel: {
             createViewModel: function (params, componentInfo) {
                 var vm = new ViewModel(params);

@@ -9,26 +9,20 @@ function ViewModel(params) {
     self._repository = params.context.repositories['imagecollection'];
     self.context = params.context;
     self.status = ko.observable('');
-    self.selected = ko.observable(undefined);
-    self.items = ko.observableArray([]);
-
-    self.select = function() {
-        self.selected(this.id);
-        self.output = this;
-    };
+    self.item = ko.observable(undefined);
 
     self.trigger = function (id) {
-        self.context.navigations[id](self.context, this);
+        self.context.navigations[id](self.context, self.item());
     };
 }
 
-ViewModel.prototype.id = 'imagelistid';
+ViewModel.prototype.id = 'annotatedimagestatisticsid';
 
 ViewModel.prototype.fields = {
     id: 1
+    ,'annotation': 1
     ,'canonical': 1
     ,'id': 1
-    ,'path': 1
 };
 
 ViewModel.prototype.waitForStatusChange = function () {
@@ -37,18 +31,15 @@ ViewModel.prototype.waitForStatusChange = function () {
            Promise.resolve();
 };
 
+
 ViewModel.prototype._compute = function() {
     if (this._computing) {
         this._computing.cancel();
     }
     var self = this;
-    this._computing = this._repository.find(this.filters, this.fields).then(function (items) {
-        self.selected(undefined);
-        self.items(items);
-        if (items.length) {
-            self.selected(items[0].id);
-            self.output = items[0];
-        }
+    this._computing = this._repository.findById(this.filters.id, this.fields).then(function (item) {
+        self.output = item;
+        self.item(item);
         self.status('computed');
         self._computing = undefined;
     });
@@ -71,7 +62,7 @@ ViewModel.prototype.init = function (options) {
 };
 
 exports.register = function () {
-    ko.components.register('c-imagelistid', {
+    ko.components.register('c-annotatedimagestatisticsid', {
         viewModel: {
             createViewModel: function (params, componentInfo) {
                 var vm = new ViewModel(params);

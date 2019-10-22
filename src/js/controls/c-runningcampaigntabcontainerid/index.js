@@ -6,30 +6,29 @@ var ko = require('knockout');
 function ViewModel(params) {
     var self = this;
     self.context = params.context;
+    self.active = ko.observable(undefined);
 
     self.init = function (options) {
         options = options || {};
-        self.children.forEach(function (child){
-            if (child === options.mask) {
-                return;
-            }
-            self.context.vms[child].init(options);
-        });
+        self.active(self.defaultChild);
+        if (self.defaultChild && options.mask !== self.defaultChild) {
+            self.context.vms[self.defaultChild].init(options);
+        }
     };
 
+    self.landmark = function (id) {
+        self.active(id);
+        self.context.vms[id].init();
+    };
     self.trigger = function (id) {
         self.context.navigations[id](self.context);
     };
 }
 
-ViewModel.prototype.id = 'workercontainerid';
-ViewModel.prototype.children = [
-    'workerlistid' // Workers List
-    ,'campaignworkersdetailsid' // worker details
-];
+ViewModel.prototype.id = 'runningcampaigntabcontainerid';
 
 exports.register = function () {
-    ko.components.register('c-workercontainerid', {
+    ko.components.register('c-runningcampaigntabcontainerid', {
         viewModel: {
             createViewModel: function (params, componentInfo) {
                 var vm = new ViewModel(params);
