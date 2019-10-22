@@ -15,6 +15,7 @@ function ViewModel(params) {
     self.select = function() {
         self.selected(this.id);
         self.output = this;
+        self.trigger.call(this, 'selectrunningcampaignid');
     };
 
     self.trigger = function (id) {

@@ -24,7 +24,7 @@ function ViewModel(params) {
 
 ViewModel.prototype.id = 'workercontainerid';
 ViewModel.prototype.children = [
-    'workerslistid' // Workers List
+    'workerslist' // Workers List
     ,'campaignworkersdetailsid' // Worker Details
 ];
 

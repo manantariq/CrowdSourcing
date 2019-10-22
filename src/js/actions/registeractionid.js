@@ -24,7 +24,7 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
         .then(solve);
     */
     // THIS CAN BE REMOVED (BEGIN)
-    $.notify({message: 'RegisterAction'}, {allow_dismiss: true, type: 'success'});
+    $.notify({message: 'Register Action'}, {allow_dismiss: true, type: 'success'});
     solve({
         event: 'registersuccessid', // registersuccess
         data: {

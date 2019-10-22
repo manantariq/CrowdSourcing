@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+            <a class="col-xs-2 btn btn-default margin" data-bind="click: landmark.bind($data, 'allimagetabid'), css: {active: active() === 'allimagetabid'}">All Images</a>
+            <a class="col-xs-2 btn btn-default margin" data-bind="click: landmark.bind($data, 'allworkerstabid'), css: {active: active() === 'allworkerstabid'}">All Workers</a>
+            <a class="col-xs-2 btn btn-default margin" data-bind="click: landmark.bind($data, 'approvedimagestabid'), css: {active: active() === 'approvedimagestabid'}">Approved Image</a>
+            <a class="col-xs-2 btn btn-default margin" data-bind="click: landmark.bind($data, 'annotatedimagestabid'), css: {active: active() === 'annotatedimagestabid'}">Annotated Images</a>
+        </div>
+</div>
+<!-- ko if: active() === 'allimagetabid' -->
+    <!-- All Images -->
+    <c-allimagetabid params="context: context"></c-allimagetabid>
+<!-- /ko -->
+<!-- ko if: active() === 'allworkerstabid' -->
+    <!-- All Workers -->
+    <c-allworkerstabid params="context: context"></c-allworkerstabid>
+<!-- /ko -->
+<!-- ko if: active() === 'approvedimagestabid' -->
+    <!-- Approved Image -->
+    <c-approvedimagestabid params="context: context"></c-approvedimagestabid>
+<!-- /ko -->
+<!-- ko if: active() === 'annotatedimagestabid' -->
+    <!-- Annotated Images -->
+    <c-annotatedimagestabid params="context: context"></c-annotatedimagestabid>
+<!-- /ko -->

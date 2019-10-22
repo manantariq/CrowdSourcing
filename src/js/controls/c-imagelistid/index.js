@@ -28,6 +28,7 @@ ViewModel.prototype.fields = {
     id: 1
     ,'canonical': 1
     ,'id': 1
+    ,'size': 1
 };
 
 ViewModel.prototype.waitForStatusChange = function () {

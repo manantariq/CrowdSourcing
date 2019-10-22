@@ -9,6 +9,7 @@ exports.createActions = function (options) {
         ,'savecampaignactionid': require('./savecampaignactionid').createAction(options)
         ,'saveeditcampaignactionid': require('./saveeditcampaignactionid').createAction(options)
         ,'startcampaignactionid': require('./startcampaignactionid').createAction(options)
+        ,'runningcampaignslist': require('./runningcampaignslist').createAction(options)
         ,'uploadimageactionid': require('./uploadimageactionid').createAction(options)
         ,'deleteimageactionid': require('./deleteimageactionid').createAction(options)
         ,'enableannotatoractionid': require('./enableannotatoractionid').createAction(options)

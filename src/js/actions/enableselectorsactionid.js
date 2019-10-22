@@ -22,7 +22,7 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
         .then(solve);
     */
     // THIS CAN BE REMOVED (BEGIN)
-    $.notify({message: 'EnableSelectorAction'}, {allow_dismiss: true, type: 'success'});
+    $.notify({message: 'Enable Selector Action'}, {allow_dismiss: true, type: 'success'});
     solve({
         event: 'enableselectorsuccessid', // success
         data: {

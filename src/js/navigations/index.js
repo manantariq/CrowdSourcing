@@ -17,11 +17,14 @@ exports.createNavigations = function (options) {
         ,'savemastereditprofileid': require('./savemastereditprofileid').createNavigation(options)
         ,'saveeditcampaignsuccessid': require('./saveeditcampaignsuccessid').createNavigation(options)
         ,'saveeditcampaignid': require('./saveeditcampaignid').createNavigation(options)
+        ,'selectrunningcampaignid': require('./selectrunningcampaignid').createNavigation(options)
         ,'selectreadycampaignid': require('./selectreadycampaignid').createNavigation(options)
         ,'savecampaignid': require('./savecampaignid').createNavigation(options)
         ,'startcampaignsuccessid': require('./startcampaignsuccessid').createNavigation(options)
         ,'editcampaignid': require('./editcampaignid').createNavigation(options)
         ,'startcampaignid': require('./startcampaignid').createNavigation(options)
+        ,'terminatecampaignsuccessid': require('./terminatecampaignsuccessid').createNavigation(options)
+        ,'terminatecampaignid': require('./terminatecampaignid').createNavigation(options)
         ,'imageuploadsuccessid': require('./imageuploadsuccessid').createNavigation(options)
         ,'deleteimagesuccessid': require('./deleteimagesuccessid').createNavigation(options)
         ,'d906a46a-51f7-4dfd-9306-dd1db66c85f8': require('./d906a46a-51f7-4dfd-9306-dd1db66c85f8').createNavigation(options)
@@ -35,5 +38,7 @@ exports.createNavigations = function (options) {
         ,'disableselectorid': require('./disableselectorid').createNavigation(options)
         ,'enableannotatorid': require('./enableannotatorid').createNavigation(options)
         ,'disableannotatorid': require('./disableannotatorid').createNavigation(options)
+        ,'selectedapprovedimageid': require('./selectedapprovedimageid').createNavigation(options)
+        ,'selectedannotatedimageid': require('./selectedannotatedimageid').createNavigation(options)
     };
 };
