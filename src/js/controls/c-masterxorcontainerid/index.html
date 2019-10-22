@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
-            <a class="col-xs-2 btn btn-default" data-bind="click: landmark.bind($data, 'masterprofileid'), css: {active: active() === 'masterprofileid'}">Master Profile</a>
-            <a class="col-xs-2 btn btn-default" data-bind="click: landmark.bind($data, 'campaignlistpageid'), css: {active: active() === 'campaignlistpageid'}">Campaigns</a>
+            <a class="col-xs-2 btn btn-default margin" data-bind="click: landmark.bind($data, 'masterprofileid'), css: {active: active() === 'masterprofileid'}">Master Profile</a>
+            <a class="col-xs-2 btn btn-default tab" data-bind="click: landmark.bind($data, 'campaignlistpageid'), css: {active: active() === 'campaignlistpageid'}">Campaigns</a>
         </div>
 </div>
 <!-- ko if: active() === 'masterprofileid' -->
@@ -12,6 +12,10 @@
     <!-- Edit Profile -->
     <c-mastereditprofileid params="context: context"></c-mastereditprofileid>
 <!-- /ko -->
+<!-- ko if: active() === 'editcampaigncontainerid' -->
+    <!-- Edit Campaign -->
+    <c-editcampaigncontainerid params="context: context"></c-editcampaigncontainerid>
+<!-- /ko -->
 <!-- ko if: active() === 'campaignlistpageid' -->
     <!-- Campaigns -->
     <c-campaignlistpageid params="context: context"></c-campaignlistpageid>
@@ -19,4 +23,8 @@
 <!-- ko if: active() === 'newcampaignid' -->
     <!-- New Campaign -->
     <c-newcampaignid params="context: context"></c-newcampaignid>
+<!-- /ko -->
+<!-- ko if: active() === 'readycampaigndetailspageid' -->
+    <!-- Ready Campaign Details -->
+    <c-readycampaigndetailspageid params="context: context"></c-readycampaigndetailspageid>
 <!-- /ko -->

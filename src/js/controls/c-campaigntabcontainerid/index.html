@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+            <a class="col-xs-2 btn btn-default margin" data-bind="click: landmark.bind($data, 'imagecontainerid'), css: {active: active() === 'imagecontainerid'}">Image Tab</a>
+            <a class="col-xs-2 btn btn-default margin" data-bind="click: landmark.bind($data, 'workercontainerid'), css: {active: active() === 'workercontainerid'}">Worker Tab</a>
+        </div>
+</div>
+<!-- ko if: active() === 'imagecontainerid' -->
+    <!-- Image Tab -->
+    <c-imagecontainerid params="context: context"></c-imagecontainerid>
+<!-- /ko -->
+<!-- ko if: active() === 'workercontainerid' -->
+    <!-- Worker Tab -->
+    <c-workercontainerid params="context: context"></c-workercontainerid>
+<!-- /ko -->
