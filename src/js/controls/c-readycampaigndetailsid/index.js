@@ -9,27 +9,28 @@ function ViewModel(params) {
     self._repository = params.context.repositories['readycampaignslist'];
     self.context = params.context;
     self.status = ko.observable('');
-    self.selected = ko.observable(undefined);
-    self.items = ko.observableArray([]);
-
-    self.select = function() {
-        self.selected(this.id);
-        self.output = this;
-        self.trigger.call(this, 'selectreadycampaignid');
-    };
+    self.item = ko.observable(undefined);
 
     self.trigger = function (id) {
-        self.context.navigations[id](self.context, this);
+        self.context.navigations[id](self.context, self.item());
     };
 }
 
-ViewModel.prototype.id = 'readycampaignslistid';
+ViewModel.prototype.id = 'readycampaigndetailsid';
 
 ViewModel.prototype.fields = {
     id: 1
+    ,'annotation_replica': 1
+    ,'annotation_size': 1
+    ,'execution': 1
     ,'id': 1
+    ,'image': 1
     ,'name': 1
+    ,'selection_replica': 1
+    ,'statistics': 1
     ,'status': 1
+    ,'threshold': 1
+    ,'worker': 1
 };
 
 ViewModel.prototype.waitForStatusChange = function () {
@@ -38,18 +39,15 @@ ViewModel.prototype.waitForStatusChange = function () {
            Promise.resolve();
 };
 
+
 ViewModel.prototype._compute = function() {
     if (this._computing) {
         this._computing.cancel();
     }
     var self = this;
-    this._computing = this._repository.find(this.filters, this.fields).then(function (items) {
-        self.selected(undefined);
-        self.items(items);
-        if (items.length) {
-            self.selected(items[0].id);
-            self.output = items[0];
-        }
+    this._computing = this._repository.findById(this.filters.id, this.fields).then(function (item) {
+        self.output = item;
+        self.item(item);
         self.status('computed');
         self._computing = undefined;
     });
@@ -72,7 +70,7 @@ ViewModel.prototype.init = function (options) {
 };
 
 exports.register = function () {
-    ko.components.register('c-readycampaignslistid', {
+    ko.components.register('c-readycampaigndetailsid', {
         viewModel: {
             createViewModel: function (params, componentInfo) {
                 var vm = new ViewModel(params);

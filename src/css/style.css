@@ -1,5 +1,11 @@
-.red{
+.blue{
     background-color: skyblue;
+    border: solid;
+    width: 50%;
+}
+
+.red{
+    background-color: red;
     border: solid;
     width: 50%;
 }
@@ -14,4 +20,8 @@
 
 .oddRow{
     background-color: #f6f6f7;
+}
+
+.tab{
+  margin-right: 5px;
 }

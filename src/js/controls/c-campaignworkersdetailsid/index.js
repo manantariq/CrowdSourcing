@@ -6,30 +6,26 @@ var ko = require('knockout'),
 
 function ViewModel(params) {
     var self = this;
-    self._repository = params.context.repositories['readycampaignslist'];
+    self._repository = params.context.repositories['workerscollection'];
     self.context = params.context;
     self.status = ko.observable('');
-    self.selected = ko.observable(undefined);
-    self.items = ko.observableArray([]);
-
-    self.select = function() {
-        self.selected(this.id);
-        self.output = this;
-        self.trigger.call(this, 'selectreadycampaignid');
-    };
+    self.item = ko.observable(undefined);
 
     self.trigger = function (id) {
-        self.context.navigations[id](self.context, this);
+        self.context.navigations[id](self.context, self.item());
     };
 }
 
-ViewModel.prototype.id = 'readycampaignslistid';
+ViewModel.prototype.id = 'campaignworkersdetailsid';
 
 ViewModel.prototype.fields = {
     id: 1
+    ,'annotation': 1
+    ,'annotator': 1
+    ,'fullname': 1
     ,'id': 1
-    ,'name': 1
-    ,'status': 1
+    ,'selection': 1
+    ,'selector': 1
 };
 
 ViewModel.prototype.waitForStatusChange = function () {
@@ -38,18 +34,15 @@ ViewModel.prototype.waitForStatusChange = function () {
            Promise.resolve();
 };
 
+
 ViewModel.prototype._compute = function() {
     if (this._computing) {
         this._computing.cancel();
     }
     var self = this;
-    this._computing = this._repository.find(this.filters, this.fields).then(function (items) {
-        self.selected(undefined);
-        self.items(items);
-        if (items.length) {
-            self.selected(items[0].id);
-            self.output = items[0];
-        }
+    this._computing = this._repository.findById(this.filters.id, this.fields).then(function (item) {
+        self.output = item;
+        self.item(item);
         self.status('computed');
         self._computing = undefined;
     });
@@ -72,7 +65,7 @@ ViewModel.prototype.init = function (options) {
 };
 
 exports.register = function () {
-    ko.components.register('c-readycampaignslistid', {
+    ko.components.register('c-campaignworkersdetailsid', {
         viewModel: {
             createViewModel: function (params, componentInfo) {
                 var vm = new ViewModel(params);

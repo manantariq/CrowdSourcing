@@ -6,60 +6,50 @@ var ko = require('knockout'),
 
 function ViewModel(params) {
     var self = this;
-    self._repository = params.context.repositories['readycampaignslist'];
     self.context = params.context;
     self.status = ko.observable('');
-    self.selected = ko.observable(undefined);
-    self.items = ko.observableArray([]);
-
-    self.select = function() {
-        self.selected(this.id);
-        self.output = this;
-        self.trigger.call(this, 'selectreadycampaignid');
-    };
+    self.fields = ko.observable({});
+    self.errors = ko.observable({});
 
     self.trigger = function (id) {
-        self.context.navigations[id](self.context, this);
+        self.context.navigations[id](self.context, self.output);
     };
 }
 
-ViewModel.prototype.id = 'readycampaignslistid';
-
-ViewModel.prototype.fields = {
-    id: 1
-    ,'id': 1
-    ,'name': 1
-    ,'status': 1
-};
+ViewModel.prototype.id = 'uploadimageformid';
 
 ViewModel.prototype.waitForStatusChange = function () {
-    return this._computing ||
-           this._initializing ||
+    return this._initializing ||
            Promise.resolve();
 };
 
-ViewModel.prototype._compute = function() {
-    if (this._computing) {
-        this._computing.cancel();
+ViewModel.prototype._compute = function () {
+    this.output = {
+        'Upload Image': this.input['Upload Image'],
     }
-    var self = this;
-    this._computing = this._repository.find(this.filters, this.fields).then(function (items) {
-        self.selected(undefined);
-        self.items(items);
-        if (items.length) {
-            self.selected(items[0].id);
-            self.output = items[0];
-        }
-        self.status('computed');
-        self._computing = undefined;
+    var self = this,
+        fields = {
+            'Upload Image': ko.observable(this.input['Upload Image']),
+        },
+        errors = {
+            'Upload Image': ko.observable(this.input['Upload Image-error']),
+        };
+    fields['Upload Image'].subscribe(function (value) {
+        self.output['Upload Image'] = value;
+        self.errors()['Upload Image'](undefined);
     });
+    this.fields(fields);
+    this.errors(errors);
+    this.status('computed');
 };
 
 
 ViewModel.prototype.init = function (options) {
     options = options || {};
     this.output = undefined;
-    this.filters = options.input || {};
+    this.fields({});
+    this.errors({});
+    this.input = options.input || {};
     this.status('ready');
     var self = this;
     this._initializing = new Promise(function (resolve) {
@@ -72,7 +62,7 @@ ViewModel.prototype.init = function (options) {
 };
 
 exports.register = function () {
-    ko.components.register('c-readycampaignslistid', {
+    ko.components.register('c-uploadimageformid', {
         viewModel: {
             createViewModel: function (params, componentInfo) {
                 var vm = new ViewModel(params);
