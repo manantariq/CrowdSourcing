@@ -1,0 +1,24 @@
+<div class="container centered">
+    <div class="row">
+            <a class="col-xs-2 btn btn-default tab" data-bind="click: landmark.bind($data, 'archiveallimagestabid'), css: {active: active() === 'archiveallimagestabid'}">All Images</a>
+            <a class="col-xs-2 btn btn-default tab" data-bind="click: landmark.bind($data, 'archiveallworkerstabid'), css: {active: active() === 'archiveallworkerstabid'}">All workers</a>
+            <a class="col-xs-2 btn btn-default tab" data-bind="click: landmark.bind($data, 'archiveapprovedimagestabid'), css: {active: active() === 'archiveapprovedimagestabid'}">Approved Images</a>
+            <a class="col-xs-2 btn btn-default tab" data-bind="click: landmark.bind($data, 'archiveannotatedimagestabid'), css: {active: active() === 'archiveannotatedimagestabid'}">Annotated Images</a>
+        </div>
+</div>
+<!-- ko if: active() === 'archiveallimagestabid' -->
+    <!-- All Images -->
+    <c-archiveallimagestabid params="context: context"></c-archiveallimagestabid>
+<!-- /ko -->
+<!-- ko if: active() === 'archiveallworkerstabid' -->
+    <!-- All workers -->
+    <c-archiveallworkerstabid params="context: context"></c-archiveallworkerstabid>
+<!-- /ko -->
+<!-- ko if: active() === 'archiveapprovedimagestabid' -->
+    <!-- Approved Images -->
+    <c-archiveapprovedimagestabid params="context: context"></c-archiveapprovedimagestabid>
+<!-- /ko -->
+<!-- ko if: active() === 'archiveannotatedimagestabid' -->
+    <!-- Annotated Images -->
+    <c-archiveannotatedimagestabid params="context: context"></c-archiveannotatedimagestabid>
+<!-- /ko -->

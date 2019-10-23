@@ -15,7 +15,7 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
     // parameters['annotationURL']
     // parameters['id']
 
-    // TODO: Execution
+    // TODO: Execution code
     /*
     example:
     mail.find({subject: 'Re: ' + data.subject})

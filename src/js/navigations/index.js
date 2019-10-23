@@ -25,6 +25,7 @@ exports.createNavigations = function (options) {
         ,'startcampaignid': require('./startcampaignid').createNavigation(options)
         ,'terminatecampaignsuccessid': require('./terminatecampaignsuccessid').createNavigation(options)
         ,'terminatecampaignid': require('./terminatecampaignid').createNavigation(options)
+        ,'selectedarchivecampaign': require('./selectedarchivecampaign').createNavigation(options)
         ,'imageuploadsuccessid': require('./imageuploadsuccessid').createNavigation(options)
         ,'deleteimagesuccessid': require('./deleteimagesuccessid').createNavigation(options)
         ,'d906a46a-51f7-4dfd-9306-dd1db66c85f8': require('./d906a46a-51f7-4dfd-9306-dd1db66c85f8').createNavigation(options)
@@ -40,5 +41,7 @@ exports.createNavigations = function (options) {
         ,'disableannotatorid': require('./disableannotatorid').createNavigation(options)
         ,'selectedapprovedimageid': require('./selectedapprovedimageid').createNavigation(options)
         ,'selectedannotatedimageid': require('./selectedannotatedimageid').createNavigation(options)
+        ,'selectedarchiveapprovedimageid': require('./selectedarchiveapprovedimageid').createNavigation(options)
+        ,'502409a0-c1d8-4abf-b76d-103a95cb9b98': require('./502409a0-c1d8-4abf-b76d-103a95cb9b98').createNavigation(options)
     };
 };

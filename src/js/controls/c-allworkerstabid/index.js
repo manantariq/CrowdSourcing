@@ -24,7 +24,7 @@ function ViewModel(params) {
 
 ViewModel.prototype.id = 'allworkerstabid';
 ViewModel.prototype.children = [
-    'allworkerslistid' // Workers
+    'allworkerslistid' // workers
 ];
 
 exports.register = function () {

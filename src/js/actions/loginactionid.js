@@ -15,7 +15,7 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
     // parameters['password']
     // parameters['username']
 
-    // TODO: Execution
+    // TODO: Execution code
     /*
     example:
     mail.find({subject: 'Re: ' + data.subject})

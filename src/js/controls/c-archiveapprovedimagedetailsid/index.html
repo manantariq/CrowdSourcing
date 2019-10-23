@@ -1,0 +1,11 @@
+<h2>Image Details</h2>
+<dl class="dl-horizontal" data-bind="if: item">
+        <dt class="evenRow" >accepted</dt>
+        <dd data-bind="text: item()['accepted']" class="evenRow" ></dd>
+        <dt class="oddRow" >canonical</dt>
+        <dd data-bind="text: item()['canonical']" class="oddRow" ></dd>
+        <dt class="evenRow" >id</dt>
+        <dd data-bind="text: item()['id']" class="evenRow" ></dd>
+        <dt class="oddRow" >rejected</dt>
+        <dd data-bind="text: item()['rejected']" class="oddRow" ></dd>
+</dl>

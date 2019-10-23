@@ -18,6 +18,8 @@ exports.register = function () {
     require('./c-newcampaignid').register();
     require('./c-readycampaigndetailspageid').register();
     require('./c-runningcampaigndetailspageid').register();
+    require('./c-archivecampaignspageid').register();
+    require('./c-archivecampaigndetailspageid').register();
     require('./c-masterprofileformid').register();
     require('./c-mastereditprofileformid').register();
     require('./c-editcampaignformid').register();
@@ -28,12 +30,19 @@ exports.register = function () {
     require('./c-campaigntabcontainerid').register();
     require('./c-runningcampaignsdetailsid').register();
     require('./c-runningcampaigntabcontainerid').register();
+    require('./c-archivecampaignlistid').register();
+    require('./c-campaigndetails').register();
+    require('./c-archivecampaigntabcontainerid').register();
     require('./c-imagecontainerid').register();
     require('./c-workercontainerid').register();
     require('./c-allimagetabid').register();
     require('./c-allworkerstabid').register();
     require('./c-approvedimagestabid').register();
     require('./c-annotatedimagestabid').register();
+    require('./c-archiveallimagestabid').register();
+    require('./c-archiveallworkerstabid').register();
+    require('./c-archiveapprovedimagestabid').register();
+    require('./c-archiveannotatedimagestabid').register();
     require('./c-uploadimageformid').register();
     require('./c-imagelistid').register();
     require('./c-workerlistid').register();
