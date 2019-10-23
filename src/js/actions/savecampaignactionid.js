@@ -18,14 +18,14 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
     // parameters['selection_replica']
     // parameters['threshold']
 
-    // TODO: Execution
+    // TODO: Code Execution 
     /*
     example:
     mail.find({subject: 'Re: ' + data.subject})
         .then(solve);
     */
     // THIS CAN BE REMOVED (BEGIN)
-    $.notify({message: 'Save'}, {allow_dismiss: true, type: 'success'});
+    $.notify({message: 'SaveAction'}, {allow_dismiss: true, type: 'success'});
     solve({
         event: 'savecampaignsuccessid', // success
         data: {

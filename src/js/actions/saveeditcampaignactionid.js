@@ -19,7 +19,7 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
     // parameters['selection_replica']
     // parameters['threshold']
 
-    // TODO: Execution
+    // TODO: Code Execution 
     /*
     example:
     mail.find({subject: 'Re: ' + data.subject})

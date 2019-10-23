@@ -1,7 +1,8 @@
-<div class="container">
+<div class="container right">
     <div class="row">
             <a class="col-xs-2 btn btn-default tab" data-bind="click: landmark.bind($data, 'masterprofileid'), css: {active: active() === 'masterprofileid'}">Master Profile</a>&nbsp;
             <a class="col-xs-2 btn btn-default tab" data-bind="click: landmark.bind($data, 'campaignlistpageid'), css: {active: active() === 'campaignlistpageid'}">Campaigns</a>&nbsp;
+            <a class="col-xs-2 btn btn-default tab" data-bind="click: landmark.bind($data, 'archivecampaignspageid'), css: {active: active() === 'archivecampaignspageid'}">Archive</a>
         </div>
 </div>
 <!-- ko if: active() === 'masterprofileid' -->
@@ -31,4 +32,12 @@
 <!-- ko if: active() === 'runningcampaigndetailspageid' -->
     <!-- Running Campaign Details -->
     <c-runningcampaigndetailspageid params="context: context"></c-runningcampaigndetailspageid>
+<!-- /ko -->
+<!-- ko if: active() === 'archivecampaignspageid' -->
+    <!-- Archive -->
+    <c-archivecampaignspageid params="context: context"></c-archivecampaignspageid>
+<!-- /ko -->
+<!-- ko if: active() === 'archivecampaigndetailspageid' -->
+    <!-- Campaign Details -->
+    <c-archivecampaigndetailspageid params="context: context"></c-archivecampaigndetailspageid>
 <!-- /ko -->

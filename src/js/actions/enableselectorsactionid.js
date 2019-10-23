@@ -15,14 +15,14 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
     // parameters['id']
     // parameters['selectionURL']
 
-    // TODO: Execution
+    // TODO: Code Execution 
     /*
     example:
     mail.find({subject: 'Re: ' + data.subject})
         .then(solve);
     */
     // THIS CAN BE REMOVED (BEGIN)
-    $.notify({message: 'Enable Selector Action'}, {allow_dismiss: true, type: 'success'});
+    $.notify({message: 'EnableSelectorAction'}, {allow_dismiss: true, type: 'success'});
     solve({
         event: 'enableselectorsuccessid', // success
         data: {

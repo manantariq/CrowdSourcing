@@ -24,7 +24,7 @@ function ViewModel(params) {
 
 ViewModel.prototype.id = 'annotatedimagestabid';
 ViewModel.prototype.children = [
-    'annotatedimageslistid' // Annotated Images
+    'annotatedimageslistid' // Annotated images
     ,'annotatedimagestatisticsid' // Annotated Image
 ];
 

@@ -16,6 +16,5 @@ exports.createActions = function (options) {
         ,'disableannotatoractionid': require('./disableannotatoractionid').createAction(options)
         ,'enableselectorsactionid': require('./enableselectorsactionid').createAction(options)
         ,'disableselectoractionid': require('./disableselectoractionid').createAction(options)
-        ,'enableannotatoractionid': require('./enableannotatoractionid').createAction(options)
     };
 };

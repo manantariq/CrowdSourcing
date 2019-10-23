@@ -14,14 +14,14 @@ Action.prototype.run = function (parameters, solve) { // add "onCancel" paramete
     // Parameters:
     // parameters['executionURL']
 
-    // TODO: Execution
+    // TODO: Code Execution 
     /*
     example:
     mail.find({subject: 'Re: ' + data.subject})
         .then(solve);
     */
     // THIS CAN BE REMOVED (BEGIN)
-    $.notify({message: 'Terminate Campaign Action'}, {allow_dismiss: true, type: 'success'});
+    $.notify({message: 'TerminateCampaignAction'}, {allow_dismiss: true, type: 'success'});
     solve({
         event: 'terminatecampaignsuccessid', // success
         data: {
