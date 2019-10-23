@@ -24,7 +24,7 @@ function ViewModel(params) {
 
 ViewModel.prototype.id = 'runningcampaigndetailspageid';
 ViewModel.prototype.children = [
-    'runningcampaignsdetailsid' // Campaign Detail
+    'runningcampaignsdetailsid' // Campaign Details
     ,'runningcampaigntabcontainerid' // Tab Container
 ];
 

@@ -36,7 +36,7 @@ exports.register = function () {
     require('./c-annotatedimagestabid').register();
     require('./c-uploadimageformid').register();
     require('./c-imagelistid').register();
-    require('./c-workerslist').register();
+    require('./c-workerlistid').register();
     require('./c-campaignworkersdetailsid').register();
     require('./c-allimageslistid').register();
     require('./c-allworkerslistid').register();

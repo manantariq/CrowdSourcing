@@ -24,7 +24,7 @@ function ViewModel(params) {
 
 ViewModel.prototype.id = 'allimagetabid';
 ViewModel.prototype.children = [
-    'allimageslistid' // image
+    'allimageslistid' // Images
 ];
 
 exports.register = function () {

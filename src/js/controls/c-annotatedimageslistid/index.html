@@ -1,4 +1,4 @@
-<h3>Annotated image</h3>
+<h3>Annotated Images</h3>
 <table class="table table-hover table-condensed">
     <thead>
         <tr>
@@ -8,7 +8,7 @@
         </tr>
     </thead>
     <tbody data-bind="foreach: items">
-        <tr data-bind="click: $parent.select, css: {evenrow: $index()%2==0,oddrow: $index()%2==1}" >
+        <tr data-bind="click: $parent.select, css: {evenRow: $index()%2==0,oddRow: $index()%2==1}" >
             <td data-bind="text: id"></td>
             <td data-bind="text: $data['canonical']" style="white-space: pre-wrap;"></td>
             <td data-bind="text: $data['id']" style="white-space: pre-wrap;"></td>

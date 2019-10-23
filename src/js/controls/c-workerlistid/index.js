@@ -23,7 +23,7 @@ function ViewModel(params) {
     };
 }
 
-ViewModel.prototype.id = 'workerslistid';
+ViewModel.prototype.id = 'workerlistid';
 
 ViewModel.prototype.fields = {
     id: 1
@@ -73,7 +73,7 @@ ViewModel.prototype.init = function (options) {
 };
 
 exports.register = function () {
-    ko.components.register('c-workerslistid', {
+    ko.components.register('c-workerlistid', {
         viewModel: {
             createViewModel: function (params, componentInfo) {
                 var vm = new ViewModel(params);
