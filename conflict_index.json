@@ -1,0 +1,342 @@
+{
+  "1":[
+    {
+      "conflict":"<form class=\"blue\">\n",
+      "resolution":"<form class=\"red\">\n"
+    },
+    {
+      "conflict":"<form class = \"blue\">\n",
+      "resolution":"<form class =\"red\">\n"
+    },
+    {
+      "conflict":"<form class = \"blue\">\n",
+      "resolution":"<form class =\"red\" >\n"
+    },
+    {
+      "conflict":"<form class = \"red\" >\n",
+      "resolution":"<form class = \"blue\">\n"
+    }
+  ],
+  "2":[
+    {
+      "conflict":"function Action(option) { \/\/ add \"options\" parameters if needed\n",
+      "resolution":"function Action(options) { \/\/ add \"options\" parameters if needed\n"
+    },
+    {
+      "conflict":"function Action( options) { \/\/ add \"options\" parameters if needed\n",
+      "resolution":"function Action( options ) { \/\/ add \"options\" parameters if needed\n"
+    }
+  ],
+  "3":[
+    {
+      "conflict":"<div class =\"row\">\n",
+      "resolution":"<div class = \"row\">\n"
+    },
+    {
+      "conflict":"<div class=\"space\"><\/div>\n",
+      "resolution":"<div class = \"space\"><\/div>\n"
+    },
+    {
+      "conflict":"<div class = \"space\"><\/div>\n",
+      "resolution":"<div class=\"space\"><\/div>\n"
+    },
+    {
+      "conflict":"<div class=\"container right\">\n",
+      "resolution":"<div class=\"container centered\">\n"
+    },
+    {
+      "conflict":"<div class=\"container centered\">\n",
+      "resolution":"<div class=\"container right\">\n"
+    }
+  ],
+  "4":[
+    {
+      "conflict":"        <tr data-bind=\"click: $parent.select, css: {evenrow: $index()%2==0,oddrow: $index()%2==1}\" >\n",
+      "resolution":"        <tr data-bind=\"click: $parent.select, css: {evenRow: $index()%2==0,oddRow: $index()%2==1}\" >\n"
+    }
+  ],
+  "5":[
+    {
+      "conflict":"<br>&nbsp;\n\n",
+      "resolution":"<div class = \"space\"><\/div>\n"
+    }
+  ],
+  "6":[
+    {
+      "conflict":"                <a class=\"btn btn-primary\" data-bind=\"click: $parent.trigger.bind($data, 'deleteimageid'), clickBubble: false\">Delete<\/a>\n",
+      "resolution":"                <a class=\"btn btn-primary big\" data-bind=\"click: $parent.trigger.bind($data, 'deleteimageid'), clickBubble: false\">Delete<\/a>\n"
+    }
+  ],
+  "7":[
+    {
+      "conflict":"<dt class=\"evenrow\" >annotation_replica<\/dt>\n",
+      "resolution":"<dt class=\"evenRow\" >annotation_replica<\/dt>\n"
+    },
+    {
+      "conflict":"<dt class=\"oddrow\" >annotation_size<\/dt>\n",
+      "resolution":"<dt class=\"oddRow\" >annotation_size<\/dt>\n"
+    }
+  ],
+  "8":[
+    {
+      "conflict":"    <!-- Campaign Detail -->\n",
+      "resolution":"    <!-- Campaign Details -->\n"
+    },
+    {
+      "conflict":"    <!-- image -->\n",
+      "resolution":"    <!-- Images -->\n"
+    },
+    {
+      "conflict":"    <!-- worker -->\n",
+      "resolution":"    <!-- Workers -->\n"
+    },
+    {
+      "conflict":"    <!-- Annotated image -->\n",
+      "resolution":"    <!-- Annotated Images -->\n"
+    }
+  ],
+  "9":[
+    {
+      "conflict":"    'readycampaigndetailsid' \/\/ Campaign Detail\n",
+      "resolution":"    'readycampaigndetailsid' \/\/ Campaign Details\n"
+    },
+    {
+      "conflict":"    'runningcampaignsdetailsid' \/\/ Campaign Detail\n",
+      "resolution":"    'runningcampaignsdetailsid' \/\/ Campaign Details\n"
+    }
+  ],
+  "10":[
+    {
+      "conflict":"<h3> Campaign Detail <\/h3>\n",
+      "resolution":"<h3> Campaign Details <\/h3>\n"
+    },
+    {
+      "conflict":"<h3>image<\/h3>\n",
+      "resolution":"<h3>Images<\/h3>\n"
+    },
+    {
+      "conflict":"<h3>worker<\/h3>\n",
+      "resolution":"<h3>Workers<\/h3>\n"
+    },
+    {
+      "conflict":"<h3>Annotated image<\/h3>\n",
+      "resolution":"<h3>Annotated Images<\/h3>\n"
+    },
+    {
+      "conflict":"<h3>Worker Detail<\/h3>\n",
+      "resolution":"<h3>worker details<\/h3>\n"
+    },
+    {
+      "conflict":"<h1>workers<\/h1>\n",
+      "resolution":"<h2>workers<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Annotated images<\/h1>\n",
+      "resolution":"<h2>Annotated images<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Annotated Image<\/h1>\n",
+      "resolution":"<h2>Annotated Image<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Images<\/h1>\n",
+      "resolution":"<h2>Images<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Image Statistics<\/h1>\n",
+      "resolution":"<h2>Image Statistics<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>All Workers<\/h1>\n",
+      "resolution":"<h2>All Workers<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Image Details<\/h1>\n",
+      "resolution":"<h2>Image Details<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Annotated Images<\/h1>\n",
+      "resolution":"<h2>Annotated Images<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Approved Images<\/h1>\n",
+      "resolution":"<h2>Approved Images<\/h2>\n"
+    },
+    {
+      "conflict":"<h2>Worker Details<\/h2>\n",
+      "resolution":"<h1>Worker Details<\/h1>\n"
+    },
+    {
+      "conflict":"<h1>Edit Campaign<\/h1>\n",
+      "resolution":"<h2>Edit Campaign<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Images List<\/h1>\n",
+      "resolution":"<h2>Images List<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Edit Profile<\/h1>\n",
+      "resolution":"<h2>Edit Profile<\/h2>\n"
+    },
+    {
+      "conflict":"<h2>Master Profile<\/h2>\n",
+      "resolution":"<h1>Master Profile<\/h1>\n"
+    },
+    {
+      "conflict":"<h1>Ready Campaigns<\/h1>\n",
+      "resolution":"<h2>Ready Campaigns<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Register<\/h1>\n",
+      "resolution":"<h2>Register<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Running Campaigns<\/h1>\n",
+      "resolution":"<h2>Running Campaigns<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Image<\/h1>\n",
+      "resolution":"<h2>Image<\/h2>\n"
+    },
+    {
+      "conflict":"<h1>Workers List<\/h1>\n",
+      "resolution":"<h2>Workers List<\/h2>\n"
+    }
+  ],
+  "11":[
+    {
+      "conflict":"<dd data-bind=\"text: item()['annotation_replica']\" class=\"evenrow\" ><\/dd>\n",
+      "resolution":"<dd data-bind=\"text: item()['annotation_replica']\" class=\"evenRow\" ><\/dd>\n"
+    },
+    {
+      "conflict":"<dd data-bind=\"text: item()['annotation_replica']\" class=\"oddrow\" ><\/dd>\n",
+      "resolution":"<dd data-bind=\"text: item()['annotation_replica']\" class=\"oddRow\" ><\/dd>\n"
+    }
+  ],
+  "12":[
+    {
+      "conflict":"    $.notify({message: 'DisableAnnotator'}, {allow_dismiss: true, type: 'success'});\n",
+      "resolution":"    $.notify({message: 'Disable Annotator Action'}, {allow_dismiss: true, type: 'success'});\n"
+    },
+    {
+      "conflict":"    $.notify({message: 'DisableSelector'}, {allow_dismiss: true, type: 'success'});\n",
+      "resolution":"    $.notify({message: 'Disable Selector Action'}, {allow_dismiss: true, type: 'success'});\n"
+    },
+    {
+      "conflict":"    $.notify({message: 'EnableAnnotator'}, {allow_dismiss: true, type: 'success'});\n",
+      "resolution":"    $.notify({message: 'Enable Annotator Action'}, {allow_dismiss: true, type: 'success'});\n"
+    },
+    {
+      "conflict":"    $.notify({message: 'EnableSelector'}, {allow_dismiss: true, type: 'success'});\n",
+      "resolution":"    $.notify({message: 'Enable Selector Action'}, {allow_dismiss: true, type: 'success'});\n"
+    },
+    {
+      "conflict":"    $.notify({message: 'Login'}, {allow_dismiss: true, type: 'success'});\n",
+      "resolution":"    $.notify({message: 'Login Action'}, {allow_dismiss: true, type: 'success'});\n"
+    },
+    {
+      "conflict":"    $.notify({message: 'Register'}, {allow_dismiss: true, type: 'success'});\n",
+      "resolution":"    $.notify({message: 'Register Action'}, {allow_dismiss: true, type: 'success'});\n"
+    },
+    {
+      "conflict":"    $.notify({message: 'TerminateCampaign'}, {allow_dismiss: true, type: 'success'});\n",
+      "resolution":"    $.notify({message: 'Terminate Campaign Action'}, {allow_dismiss: true, type: 'success'});\n"
+    },
+    {
+      "conflict":"    $.notify({message: 'Save'}, {allow_dismiss: true, type: 'success'});\n",
+      "resolution":"    $.notify({message: 'Save Action'}, {allow_dismiss: true, type: 'success'});\n"
+    },
+    {
+      "conflict":"    $.notify({message: 'StartCampaign'}, {allow_dismiss: true, type: 'success'});\n",
+      "resolution":"    $.notify({message: 'Start Campaign Action'}, {allow_dismiss: true, type: 'success'});\n"
+    },
+    {
+      "conflict":"    $.notify({message: 'uploadImage'}, {allow_dismiss: true, type: 'success'});\n",
+      "resolution":"    $.notify({message: 'upload image'}, {allow_dismiss: true, type: 'success'});\n"
+    }
+  ],
+  "13":[
+    {
+      "conflict":"    'allimageslistid' \/\/ image\n",
+      "resolution":"    'allimageslistid' \/\/ Images\n"
+    },
+    {
+      "conflict":"    'allworkerslistid' \/\/ worker\n",
+      "resolution":"    'allworkerslistid' \/\/ Workers\n"
+    }
+  ],
+  "14":[
+    {
+      "conflict":"    'annotatedimageslistid' \/\/ Annotated image\n",
+      "resolution":"    'annotatedimageslistid' \/\/ Annotated Images\n"
+    }
+  ],
+  "15":[
+    {
+      "conflict":"            <th>size<\/th>\n",
+      "resolution":"            <th>path<\/th>\n"
+    }
+  ],
+  "16":[
+    {
+      "conflict":"            <td data-bind=\"text: $data['size']\" style=\"white-space: pre-wrap;\"><\/td>\n",
+      "resolution":"            <td data-bind=\"text: $data['path']\" style=\"white-space: pre-wrap;\"><\/td>\n"
+    }
+  ],
+  "17":[
+    {
+      "conflict":"    ,'size': 1\n",
+      "resolution":"    ,'path': 1\n"
+    }
+  ],
+  "18":[
+    {
+      "conflict":"    require('.\/c-workerslist').register();\n",
+      "resolution":"    require('.\/c-workerlistid').register();\n"
+    }
+  ],
+  "19":[
+    {
+      "conflict":"    background-color: paleturquoise;\n",
+      "resolution":"    background-color: #e4f5f9;\n"
+    }
+  ],
+  "20":[
+    {
+      "conflict":"    \/\/ TODO: Execution code\n",
+      "resolution":"    \/\/ TODO: Code Execution \n"
+    },
+    {
+      "conflict":"    \/\/ TODO: Code Execution \n",
+      "resolution":"    \/\/ TODO: Execution code\n"
+    }
+  ],
+  "21":[
+    {
+      "conflict":"    <tbody data-bind= \"foreach: items\" >\n",
+      "resolution":"    <tbody data-bind = \"foreach: items\">\n"
+    },
+    {
+      "conflict":"    <tbody data-bind = \"foreach: items\">\n",
+      "resolution":"    <tbody data-bind= \"foreach: items\" >\n"
+    }
+  ],
+  "22":[
+    {
+      "conflict":"<h2>Completed Campaigns<\/h2>\n",
+      "resolution":"<h1>Completed Campaigns<\/h1>\n"
+    },
+    {
+      "conflict":"<h2>Campaign<\/h2>\n",
+      "resolution":"<h1>Campaign<\/h1>\n"
+    },
+    {
+      "conflict":"<h2>Login<\/h2>\n",
+      "resolution":"<h1>Login<\/h1>\n"
+    },
+    {
+      "conflict":"<h1>New Campaign<\/h1>\n",
+      "resolution":"<h2>New Campaign<\/h2>\n"
+    }
+  ]
+}

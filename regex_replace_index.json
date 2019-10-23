@@ -1,0 +1,90 @@
+{
+    "1": {
+        "regex": "[^7]\"[^;]\\w*+",
+        "replacement": "\"red"
+    },
+    "2": {
+        "regex": "(?=\\))",
+        "replacement": "s"
+    },
+    "3": {
+        "regex": "=++",
+        "replacement": "$0 "
+    },
+    "4": {
+        "regex": "\\w(\\w\\w:\\s\\$\\w\\w\\w\\w\\w\\(\\)%\\d==\\d,\\w\\w\\w)\\w",
+        "replacement": "R$1R"
+    },
+    "5": {
+        "regex": "[^_]++",
+        "replacement": "<div class = \"space\"></div>"
+    },
+    "6": {
+        "regex": "[y]",
+        "replacement": "$0 big"
+    },
+    "7": {
+        "regex": "r",
+        "replacement": "R"
+    },
+    "8": {
+        "regex": "i(m\\w++)",
+        "replacement": "I$1s"
+    },
+    "9": {
+        "regex": "(?![^_])",
+        "replacement": "s"
+    },
+    "10": {
+        "regex": "\\d(>\\w++\\s\\w++</\\w)\\d",
+        "replacement": "2$12"
+    },
+    "11": {
+        "regex": "\\w?+",
+        "replacement": ""
+    },
+    "12": {
+        "regex": "(?:'})++",
+        "replacement": " Action$0"
+    },
+    "13": {
+        "regex": "[^_]++",
+        "replacement": "$0s"
+    },
+    "14": {
+        "regex": "(\\w\\s)\\w(\\w++)",
+        "replacement": "$1I$2s"
+    },
+    "15": {
+        "regex": "s\\w++([^\\d])",
+        "replacement": "path$1"
+    },
+    "16": {
+        "regex": "size",
+        "replacement": "path"
+    },
+    "17": {
+        "regex": "\\w++",
+        "replacement": "path"
+    },
+    "18": {
+        "regex": "s((?:list)++)",
+        "replacement": "$1id"
+    },
+    "19": {
+        "regex": "(\\w)\\w\\w\\w\\w\\w\\w\\w\\w\\w\\w\\w\\w(;)",
+        "replacement": "#e4f5f9$2"
+    },
+    "20": {
+        "regex": "([^\\d])(\\s\\w++\\s)\\w(\\w++)",
+        "replacement": "$1 C$3$2"
+    },
+    "21": {
+        "regex": "(=\\s\"\\w++:\\s\\w++\")[^3]",
+        "replacement": " $1"
+    },
+    "22": {
+        "regex": "(?:\\d(>\\w++[^']*+))++",
+        "replacement": "1$1"
+    }
+}
