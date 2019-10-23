@@ -1,4 +1,4 @@
-<h1>Images</h1>
+<h2>Images</h2>
 <table class="table table-hover table-condensed">
     <thead>
         <tr>
@@ -7,7 +7,7 @@
             <th>id</th>
         </tr>
     </thead>
-    <tbody data-bind= "foreach: items" >
+    <tbody data-bind = "foreach: items">
         <tr data-bind="click: $parent.select, css: {evenRow: $index()%2==0,oddRow: $index()%2==1}" >
             <td data-bind="text: id"></td>
             <td data-bind="text: $data['canonical']" style="white-space: pre-wrap;"></td>
@@ -15,4 +15,4 @@
         </tr>
     </tbody>
 </table>
-<div class = "space"></div>
+<div class="space"></div>
