@@ -1,4 +1,4 @@
-<h2>Edit Campaign</h2>
+<h3>Edit Campaign</h3>
 <form class = "blue">
     <div class="form-group" data-bind="css: {'has-error': errors()['annotation_replica']}">
         <label for="editcampaignformid_field_0" data-bind="css: {active: fields()['annotation_replica']}, attr: {'data-error': errors()['annotation_replica']}" class="control-label">annotation_replica</label>
@@ -31,6 +31,7 @@
         <span id="editcampaignformid_field_5_error" class="help-block" data-bind="text: errors()['threshold']"></span>
     </div>
 </form>
+<div class = "space"></div>
 <div class = "row">
     <a class="btn btn-primary" data-bind="click: trigger.bind($data, 'saveeditcampaignid')">save</a>
 </div>

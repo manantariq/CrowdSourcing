@@ -1,4 +1,4 @@
-<h1>Master Profile</h1>
+<h3>Master Profile</h3>
 <form class = "blue">
     <div class="form-group" data-bind="css: {'has-error': errors()['Full Name']}">
         <label for="masterprofileformid_field_0" data-bind="css: {active: fields()['Full Name']}, attr: {'data-error': errors()['Full Name']}" class="control-label">Full Name</label>
@@ -16,6 +16,7 @@
         <span id="masterprofileformid_field_2_error" class="help-block" data-bind="text: errors()['Username']"></span>
     </div>
 </form>
+<div class = "space"></div>
 <div class = "row">
     <a class="btn btn-primary" data-bind="click: trigger.bind($data, 'mastereditid')">Edit Profile</a>
 </div>
