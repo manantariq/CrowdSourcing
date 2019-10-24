@@ -1,6 +1,6 @@
 <h2>workers</h2>
 <table class="table table-hover table-condensed">
-    <thead>
+    <thead class = "HEAD">
         <tr>
             <th>#</th>
             <th>annotator</th>
@@ -9,7 +9,7 @@
             <th>selector</th>
         </tr>
     </thead>
-    <tbody data-bind = "foreach: items">
+    <tbody data-bind = "foreach: items" class = "BODY">
         <tr data-bind="click: $parent.select, css: {evenRow: $index()%2==0,oddRow: $index()%2==1}" >
             <td data-bind="text: id"></td>
             <td data-bind="text: $data['annotator']" style="white-space: pre-wrap;"></td>

@@ -1,4 +1,4 @@
-<h1>Login</h1>
+<h2>Login</h2>
 <form class = "blue">
     <div class="form-group" data-bind="css: {'has-error': errors()['password']}">
         <label for="loginformid_field_0" data-bind="css: {active: fields()['password']}, attr: {'data-error': errors()['password']}" class="control-label">password</label>
@@ -11,6 +11,7 @@
         <span id="loginformid_field_1_error" class="help-block" data-bind="text: errors()['username']"></span>
     </div>
 </form>
+<div class = "space"></div>
 <div class = "row">
     <a class="btn btn-primary" data-bind="click: trigger.bind($data, 'registereventid')">Register</a>
     <a class="btn btn-primary" data-bind="click: trigger.bind($data, 'loginid')">Login</a>
