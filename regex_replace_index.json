@@ -8,8 +8,8 @@
         "replacement": "s"
     },
     "3": {
-        "regex": "=++",
-        "replacement": "$0 "
+        "regex": "([^4])ight([^=])",
+        "replacement": "centered$2"
     },
     "4": {
         "regex": "\\w(\\w\\w:\\s\\$\\w\\w\\w\\w\\w\\(\\)%\\d==\\d,\\w\\w\\w)\\w",
@@ -36,7 +36,7 @@
         "replacement": "s"
     },
     "10": {
-        "regex": "\\d(>\\w++\\s\\w++</\\w)\\d",
+        "regex": "1(>\\w++\\s\\w++</\\w)\\d",
         "replacement": "2$12"
     },
     "11": {
@@ -80,11 +80,19 @@
         "replacement": "$1 C$3$2"
     },
     "21": {
-        "regex": "(=\\s\"\\w++:\\s\\w++\")[^3]",
-        "replacement": " $1"
+        "regex": "((?<!s)\\s\")\\w(\\w++\")([^c])",
+        "replacement": "\"body\"\"$3"
     },
     "22": {
-        "regex": "(?:\\d(>\\w++[^']*+))++",
-        "replacement": "1$1"
+        "regex": "(<\\w)\\d(>\\w++</\\w)\\d(>)",
+        "replacement": "$11$21$3"
+    },
+    "23": {
+        "regex": "((\\s\")\\w++)",
+        "replacement": "$2header"
+    },
+    "24": {
+        "regex": "[^\\d]++",
+        "replacement": "$0"
     }
 }

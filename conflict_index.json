@@ -47,6 +47,22 @@
     {
       "conflict":"<div class=\"container centered\">\n",
       "resolution":"<div class=\"container right\">\n"
+    },
+    {
+      "conflict":"<div class =\"space\" ><\/div>\n",
+      "resolution":"<div class = \"space\"><\/div>\n"
+    },
+    {
+      "conflict":"<div class =\"space\" ><\/div>\n",
+      "resolution":"<div class = \"space\" ><\/div>\n"
+    },
+    {
+      "conflict":"<div class= \"space\"><\/div>\n",
+      "resolution":"<div class = \"space\"><\/div>\n"
+    },
+    {
+      "conflict":"<div class =\"space\" ><\/div>\n",
+      "resolution":"<div class=\"space\"><\/div>\n"
     }
   ],
   "4":[
@@ -201,6 +217,34 @@
     {
       "conflict":"<h1>Workers List<\/h1>\n",
       "resolution":"<h2>Workers List<\/h2>\n"
+    },
+    {
+      "conflict":"<h4>Image Details<\/h4>\n",
+      "resolution":"<h3>Image Details<\/h3>\n"
+    },
+    {
+      "conflict":"<h2>Worker Details<\/h2>\n",
+      "resolution":"<h3>Worker Details<\/h3>\n"
+    },
+    {
+      "conflict":"<h1>Edit Campaign<\/h1>\n",
+      "resolution":"<h3>Edit Campaign<\/h3>\n"
+    },
+    {
+      "conflict":"<h>Edit Profile<\/h1>\n",
+      "resolution":"<h3>Edit Profile<\/h3>\n"
+    },
+    {
+      "conflict":"<h4>Master Profile<\/h4>\n",
+      "resolution":"<h3>Master Profile<\/h3>\n"
+    },
+    {
+      "conflict":"<h4>Register<\/h4>\n",
+      "resolution":"<h3>Register<\/h3>\n"
+    },
+    {
+      "conflict":"<h1>Image<\/h1>\n",
+      "resolution":"<h3>Image<\/h3>\n"
     }
   ],
   "11":[
@@ -319,6 +363,66 @@
     {
       "conflict":"    <tbody data-bind = \"foreach: items\">\n",
       "resolution":"    <tbody data-bind= \"foreach: items\" >\n"
+    },
+    {
+      "conflict":"    <tbody data-bind= \"foreach: items\" class= \"tbody\" >\n",
+      "resolution":"    <tbody data-bind= \"foreach: items\"  class= \"body\">\n"
+    },
+    {
+      "conflict":"    <tbody data-bind = \"foreach: items\" class = \"BODY\">\n",
+      "resolution":"    <tbody data-bind = \"foreach: items\" class =\"body\">\n"
+    },
+    {
+      "conflict":"    <tbody data-bind = \"foreach: items\" class = \"body\" >\n",
+      "resolution":"    <tbody data-bind = \"foreach: items\" class=\"body\" >\n"
+    },
+    {
+      "conflict":"    <tbody data-bind= \"foreach: items\" class = \"TBODY\">\n",
+      "resolution":"    <tbody data-bind= \"foreach: items\" class=\"body\">\n"
+    },
+    {
+      "conflict":"    <tbody data-bind = \"foreach: items\" class =  \"tboyd\" >\n",
+      "resolution":"    <tbody data-bind = \"foreach: items\" class = \"body\">\n"
+    },
+    {
+      "conflict":"    <tbody data-bind = \"foreach: items\" class=\"body\" >\n",
+      "resolution":"    <tbody data-bind = \"foreach: items\" class= \"body\" >\n"
+    },
+    {
+      "conflict":"    <tbody data-bind = \"foreach: items\" class= \"tbody\">\n",
+      "resolution":"    <tbody data-bind = \"foreach: items\" class = \"body\" >\n"
+    },
+    {
+      "conflict":"    <tbody data-bind= \"foreach: items\" class= \"tbody\">\n",
+      "resolution":"    <tbody data-bind= \"foreach: items\"  class = \"body\">\n"
+    },
+    {
+      "conflict":"    <tbody data-bind = \"foreach: items\" class=\"tbody\">\n",
+      "resolution":"    <tbody data-bind = \"foreach: items\" class=\"body\">\n"
+    },
+    {
+      "conflict":"    <tbody data-bind = \"foreach: items\" class = \"body\" >\n",
+      "resolution":"    <tbody data-bind = \"foreach: items\" class =\"body\">\n"
+    },
+    {
+      "conflict":"    <tbody data-bind= \"foreach: items\" class=\"Body\">\n",
+      "resolution":"    <tbody data-bind= \"foreach: items\" class = \"body\" >\n"
+    },
+    {
+      "conflict":"    <tbody data-bind = \"foreach: items\" class =\"BodY\" >\n",
+      "resolution":"    <tbody data-bind = \"foreach: items\" class=\"body\">\n"
+    },
+    {
+      "conflict":"    <tbody data-bind=\"foreach: items\" class = \"BodY \">\n",
+      "resolution":"    <tbody data-bind=\"foreach: items\" class= \"body\">\n"
+    },
+    {
+      "conflict":"    <tbody data-bind=\"foreach: items\" class = \"Tbody\">\n",
+      "resolution":"    <tbody data-bind=\"foreach: items\" class=\"body\">\n"
+    },
+    {
+      "conflict":"    <tbody data-bind = \"foreach: items\" class = \"BODY\">\n",
+      "resolution":"    <tbody data-bind = \"foreach: items\" class = \"body\">\n"
     }
   ],
   "22":[
@@ -337,6 +441,90 @@
     {
       "conflict":"<h1>New Campaign<\/h1>\n",
       "resolution":"<h2>New Campaign<\/h2>\n"
+    },
+    {
+      "conflict":"<h4>Campaign<\/h4>\n",
+      "resolution":"<h3>Campaign<\/h3>\n"
+    },
+    {
+      "conflict":"<h2>Login<\/h2>\n",
+      "resolution":"<h3>Login<\/h3>\n"
+    },
+    {
+      "conflict":"<h1>New Campaign<\/h1>\n",
+      "resolution":"<h3>New Campaign<\/h3>\n"
+    },
+    {
+      "conflict":"<h2>Campaign<\/h2>\n",
+      "resolution":"<h3>Campaign<\/h3>\n"
+    }
+  ],
+  "23":[
+    {
+      "conflict":"    <thead class = \"theader\">\n",
+      "resolution":"    <thead  class= \"header\">\n"
+    },
+    {
+      "conflict":"    <thead class = \"HEAD\">\n",
+      "resolution":"    <thead class =\"header\">\n"
+    },
+    {
+      "conflict":"    <thead class = \"header\" >\n",
+      "resolution":"    <thead class=\"header\" >\n"
+    },
+    {
+      "conflict":"    <thead class = \"HEADER\" >\n",
+      "resolution":"    <thead class=\"header\">\n"
+    },
+    {
+      "conflict":"    <thead class = \"thaed\">\n",
+      "resolution":"    <thead class = \"header\">\n"
+    },
+    {
+      "conflict":"    <thead class= \"haeder\">\n",
+      "resolution":"    <thead class= \"header\" >\n"
+    },
+    {
+      "conflict":"    <thead classa=\"header\" >\n",
+      "resolution":"    <thead class = \"header\" >\n"
+    },
+    {
+      "conflict":"    <thead classa = \"head\">\n",
+      "resolution":"    <thead  class = \"header\">\n"
+    },
+    {
+      "conflict":"    <thead classa =\"head\">\n",
+      "resolution":"    <thead class=\"header\">\n"
+    },
+    {
+      "conflict":"    <thead class =\"headr\">\n",
+      "resolution":"    <thead class =\"header\">\n"
+    },
+    {
+      "conflict":"    <thead class =\"Header\">\n",
+      "resolution":"    <thead class= \"header\">\n"
+    },
+    {
+      "conflict":"    <thead class = \"HEAder\">\n",
+      "resolution":"    <thead class = \"header\">\n"
+    },
+    {
+      "conflict":"    <thead class = \"HeadeR\">\n",
+      "resolution":"    <thead class=\"header\">\n"
+    },
+    {
+      "conflict":"    <thead class = \"Headr\">\n",
+      "resolution":"    <thead class=\"header\">\n"
+    },
+    {
+      "conflict":"    <thead class = \"HEAD\">\n",
+      "resolution":"    <thead class = \"header\">\n"
+    }
+  ],
+  "24":[
+    {
+      "conflict":"    <a class=\"btn btn-primary big \" data-bind=\"click: trigger.bind($data, 'savecampaignid')\">savecampaignid<\/a>\n",
+      "resolution":"    <a class=\"btn btn-primary big\" data-bind=\"click: trigger.bind($data, 'savecampaignid')\">savecampaignid<\/a>\n"
     }
   ]
 }
